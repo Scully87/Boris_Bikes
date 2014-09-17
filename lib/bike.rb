@@ -15,5 +15,9 @@ class Bike
 		@broken = true 
 	end
 
+	def fix!
+		@broken = false
+	end
+
 
 end
