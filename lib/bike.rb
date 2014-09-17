@@ -1,10 +1,13 @@
 class Bike
 
 	def initialize
-		@broken = false
+		fix!
 		#the @ gives us an instance variable meaning
 		# we can use 'broken' in all other methods where
 		#each method can update them sepeartely
+
+		#refactored and used 'fix!' as both defs need
+		# '@broken = false'
 	end
 
 	def broken?
