@@ -1,4 +1,4 @@
-	module BikeContainer
+module BikeContainer
 
 	DEFAULT_CAPACITY = 10
 
@@ -18,13 +18,20 @@
 		bikes.count 
 	end
 
-	def dock(bike)
+	def dock(a_bike = nil)
+		raise "You have not requested to dock a bike" if a_bike.nil?
 		raise "Station is full" if full?
-		bikes << bike
+		bikes << a_bike
 	end
 
-	def release(bike)
+	def release(a_bike = nil)
+		raise "You have not requested to release a bike" if a_bike.nil?
+		raise "Container is empty" if empty?
 		bikes.delete(bike)
+	end
+
+	def empty?
+		bike_count <= 0
 	end
 
 	def full?
@@ -32,6 +39,16 @@
 	end
 
 	def available_bikes
-		bikes.reject {|bike| bike.broken? }
+		bike.reject {|bike| bike.broken? }
 	end
+
+	def broken_bikes
+		bike.select {|bike| bike.broken? }
+	end
+
+	def accept(bike)
+		bike.fix!
+		dock(bike)
+	end
+
 end
