@@ -1,4 +1,4 @@
-we are building a system that manages bikes that can be rented 
+We are building a system that manages bikes that can be rented 
 by users from docking stations and returned there at the end 
 of the rental. The bikes can break while being used, in which
 case they will not be available for rental after they are
