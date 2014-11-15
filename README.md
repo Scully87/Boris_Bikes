@@ -26,7 +26,7 @@ $ irb
   > require './files'
 ```
 
-#####To Do List
+####To Do List
 - [x] Class/tests for Bike
 - [x] Class/tests for Docking Station
 - [ ] Class/tests for Van
@@ -34,3 +34,8 @@ $ irb
 - [ ] Consider Class for Person
 - [x] Module for BikeContainer
 - [ ] Consider Class for Accident? or Module?
+
+##### Technologies used:
+
+- Ruby
+- Rspec
