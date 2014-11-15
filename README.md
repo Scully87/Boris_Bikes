@@ -1,9 +1,25 @@
-We are building a system that manages bikes that can be rented 
-by users from docking stations and returned there at the end 
-of the rental. The bikes can break while being used, in which
-case they will not be available for rental after they are
-returned. There is a garage that can fix broken bikes. A van
-is used to move broke bikes from the stations to the garage.
-It can alse be used to take fixed bikes back to the station.
-The van, all stations and the garage have fixed capacity, so 
-they cannot take more bikes that they can hold.
+Boris Bikes
+===========
+
+[Makers Academy](https://www.makersacademy.com) week 1 project introduces us to Object-Oriented Programming and testing with RSpec. We simulated the Barclays Cycle Hire system in London with separate classes for bikes, docking stations, vans, garages, and people.
+
+A person can rent a bike from one station and return it to another. A bike can be broken if the person has an accident. Broken bikes will not be rented out, and can be fixed when picked up by a van and taken to the garage.
+
+
+How to use
+----------
+Clone the repository:
+```shell
+$ git clone git@github.com:scully87/boris_bikes.git
+```
+
+Change into the directory:
+```shell
+$ cd boris_bikes
+```
+
+Open in IRB:
+```shell
+$ irb
+  > require './files'
+```
